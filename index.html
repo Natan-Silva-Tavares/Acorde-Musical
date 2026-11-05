@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080a24" />
+  <title>Acorde Musical — Ouça mais, viva mais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> FRETE GRÁTIS acima de R$ 299 <span class="announce-divider">✳</span> sua próxima faixa favorita está aqui</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Acorde Musical início"><span class="brand-mark">♫</span><span>acorde<span class="brand-light">.musical</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a class="active" href="#inicio">Início</a><a href="#catalogo">Discos</a><a href="#catalogo" data-filter="Áudio">Áudio</a><a href="#manifesto">Nossa vibe</a></nav>
+    <div class="header-actions"><button class="icon-button search-open" aria-label="Buscar">⌕</button><button class="icon-button account-open" aria-label="Perfil">♙</button><button class="cart-button" aria-label="Abrir carrinho"><span class="cart-icon">♧</span><span class="cart-label">Sacola</span><b id="cart-count">0</b></button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid"></div><div class="hero-copy"><div class="eyebrow"><span>●</span> SINTA O SOM. ESCOLHA SEU MUNDO.</div><h1>O som da sua<br/>vida tem <span>cor.</span></h1><p>Vinil, áudio e acessórios que transformam qualquer momento em uma experiência sonora.</p><div class="hero-actions"><a class="button button-primary" href="#catalogo">Explorar a loja <span>↗</span></a><a class="text-link" href="#manifesto">Conheça nossa vibe <span>→</span></a></div><div class="hero-note"><span class="note-line"></span><span>CURADORIA FEITA PRA QUEM SENTE</span></div></div>
+      <div class="hero-art" aria-label="Disco de vinil colorido"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-disc"><div class="disc-label"><span>ACORDE<br/>SOUNDS</span><i>♫</i></div></div><div class="floating-tag tag-top">SIDE A <span>✳</span></div><div class="floating-tag tag-bottom"><span class="tag-dot"></span> PLAY YOUR WAY</div><div class="spark spark-a">✳</div><div class="spark spark-b">✦</div><div class="hero-sticker">VIBE<br/><b>ON</b></div></div>
+      <div class="hero-bottom"><span>01 — 04</span><div class="hero-progress"><i></i></div><span>DESCUBRA O SEU PRÓXIMO SOM</span><span class="hero-arrows">← &nbsp; →</span></div>
+    </section>
+
+    <section class="category-strip"><div class="strip-label">EXPLORE POR VIBE</div><div class="category-chips"><button class="chip selected" data-filter="Todos">Tudo <span>✳</span></button><button class="chip" data-filter="Vinil">Vinil <span>◉</span></button><button class="chip" data-filter="Fones">Fones <span>⌁</span></button><button class="chip" data-filter="Áudio">Áudio <span>▰</span></button><button class="chip" data-filter="Acessórios">Acessórios <span>✦</span></button></div><a class="all-link" href="#catalogo">VER TUDO <span>↗</span></a></section>
+
+    <section class="catalog section-wrap" id="catalogo"><div class="section-heading"><div><div class="eyebrow violet-text">SUA PRÓXIMA OBSESSÃO</div><h2>Achados que dão <em>play.</em></h2></div><div class="catalog-controls"><label class="search-field"><span>⌕</span><input id="search-input" type="search" placeholder="Buscar um som..." /></label><button class="sort-button" id="sort-button">Mais amados <span>⌄</span></button></div></div><div class="product-grid" id="product-grid"></div><div class="empty-state" id="empty-state" hidden>Nenhum produto encontrado. Tente outra busca ✳</div><div class="catalog-footer"><span>PEÇAS ESCOLHIDAS A DEDO <b>✳</b></span><button class="button button-outline" id="load-more">Ver mais achados <span>↓</span></button><span id="product-count"></span></div></section>
+
+    <section class="manifesto section-wrap" id="manifesto"><div class="manifesto-visual"><div class="manifesto-disc"><span>ACORDE<br/>MUSICAL</span><b>♫</b></div><span class="manifesto-orbit-label">SOM QUE CONECTA — DESDE SEMPRE</span></div><div class="manifesto-copy"><div class="eyebrow">MAIS QUE OUVIR. SENTIR.</div><h2>Tem uma trilha<br/>sonora pra <em>tudo.</em></h2><p>A gente acredita que música transforma espaços, momentos e pessoas. Por isso, selecionamos peças que fazem o som sair do fone e entrar na sua vida.</p><a class="text-link" href="#catalogo">Descobrir nossa curadoria <span>→</span></a></div></section>
+
+    <section class="newsletter"><div><div class="eyebrow">SINAL ABERTO PARA BOAS VIBES</div><h2>Receba novidades<br/>em <em>primeira mão.</em></h2></div><form id="newsletter-form"><label for="email-input">SEU MELHOR E-MAIL</label><div class="newsletter-input"><input type="email" id="email-input" required placeholder="voce@email.com"/><button type="submit" aria-label="Inscrever email">→</button></div><small id="newsletter-message">Sem spam, só som bom. Pode confiar.</small></form><div class="newsletter-spark">✳</div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">♫</span><span>acorde<span class="brand-light">.musical</span></span></a><span>OUÇA MAIS, VIVA MAIS.</span><span>© 2026 ACORDE MUSICAL</span><a href="#inicio">VOLTAR AO TOPO ↑</a></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Sua sacola"><div class="drawer-head"><div><div class="eyebrow">SUA SELEÇÃO</div><h2>Sacola <span id="drawer-count">(0)</span></h2></div><button class="close-button" data-close aria-label="Fechar">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>♫</span><h3>Seu próximo som<br/>ainda está por aqui.</h3><button class="text-link" data-close>Explorar a loja →</button></div><div class="cart-summary" id="cart-summary"><div class="summary-line"><span>Subtotal</span><b id="cart-subtotal">R$ 0,00</b></div><div class="shipping-note">✳ Frete calculado na próxima etapa</div><button class="button button-primary checkout-button">Continuar para checkout <span>↗</span></button></div></aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
